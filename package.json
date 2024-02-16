@@ -13,9 +13,14 @@
     "keywords": [],
     "license": "ISC",
     "devDependencies": {
-        "nodemon": "^2.0.16"
+        "@types/node": "^20.11.19",
+        "@types/ws": "^8.5.10",
+        "dotenv": "^16.4.4",
+        "nodemon": "^2.0.16",
+        "typescript": "^5.3.3"
     },
     "dependencies": {
+        "jest": "^29.7.0",
         "ws": "^8.8.0"
     }
 }
