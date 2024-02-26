@@ -1,5 +1,4 @@
-import { WebSocket, WebSocketServer } from "ws";
-import { onHandler } from "../handlers/ws_handler";
+import { WebSocketServer } from "ws";
 
 export const wss = new WebSocketServer({ port: 3000 });
 
