@@ -1,40 +1,18 @@
-import { Commands } from "../enums/commands";
-
-export interface ICreateRoom {
-    type: Commands,
-    data: string,
-    id: number
+export interface IAddUserToRoomData {
+    indexRoom: number
 };
 
-export interface IAddUserToRoom {
-    type: Commands,
-    data: {
-        indexRoom: number
-    },
-    id: number
+export interface ICreateGameData {
+    idGame: number,
+    idPlayer: number
 };
 
-export interface ICreateGame {
-    type: Commands,
-    data: {
-        idGame: number,
-        idPlayer: number
-    },
-    id: number
-};
-
-export interface IUpdateRoom {
-    type: Commands,
-    data: [
+export interface IUpdateRoomData {
+    roomId: number,
+    roomUsers: [
         {
-            roomId: number,
-            roomUsers: [
-                {
-                    name: string,
-                    index: number
-                }
-            ]
+            name: string,
+            index: number
         }
-    ],
-    id: number
+    ]
 }
